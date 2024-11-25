@@ -12,7 +12,7 @@ export default function Info(){
                         V
                     </div>
                     <p className="opacity-80 text-[16px]">
-                        La letra está en la palabra y en la posición correcta.
+                        La letra <b>está</b> en la palabra y en la <b>posición correcta</b>.
                     </p>
                 </div>
                 <div className="ml-2 flex items-center gap-3 mb-3">
@@ -22,7 +22,7 @@ export default function Info(){
                         A
                     </div>
                     <p className="opacity-80 text-[16px]">
-                        La letra está en la palabra pero en una posición diferente.
+                        La letra <b>está</b> en la palabra pero en una <b>posición diferente</b>.
                     </p>
                 </div>
                 <div className="ml-2 flex items-center gap-3 mb-3">
@@ -32,7 +32,7 @@ export default function Info(){
                         B
                     </div>
                     <p className="opacity-80 text-[16px] ">
-                        La letra está en la palabra pero en una posición diferente.
+                    La letra <b>no está</b> presente en la palabra.
                     </p>
                 </div>
         </>
