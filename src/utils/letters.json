@@ -1,0 +1,32 @@
+{
+    "letters": [
+        { "letter": "q", "status": "none" },
+        { "letter": "w", "status": "none" },
+        { "letter": "e", "status": "none" },
+        { "letter": "r", "status": "none" },
+        { "letter": "t", "status": "none" },
+        { "letter": "y", "status": "none" },
+        { "letter": "u", "status": "none" },
+        { "letter": "i", "status": "none" },
+        { "letter": "o", "status": "none" },
+        { "letter": "p", "status": "none" },
+        { "letter": "a", "status": "none" },
+        { "letter": "s", "status": "none" },
+        { "letter": "d", "status": "none" },
+        { "letter": "f", "status": "none" },
+        { "letter": "g", "status": "none" },
+        { "letter": "h", "status": "none" },
+        { "letter": "j", "status": "none" },
+        { "letter": "k", "status": "none" },
+        { "letter": "l", "status": "none" },
+        { "letter": "ñ", "status": "none" },
+        { "letter": "z", "status": "none" },
+        { "letter": "x", "status": "none" },
+        { "letter": "c", "status": "none" },
+        { "letter": "v", "status": "none" },
+        { "letter": "b", "status": "none" },
+        { "letter": "n", "status": "none" },
+        { "letter": "m", "status": "none" },
+        { "letter": "backspace", "status":"none"}
+    ]
+}
