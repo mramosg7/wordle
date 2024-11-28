@@ -18,7 +18,7 @@ export default function Header({StatsOpen, InfoOpen}: HeaderProps){
             </h1>
             <nav className="flex gap-7">
                 <Settings/>
-                <a href=""><FaGithub /></a>
+                <a href="https://github.com/mramosg7/wordle"><FaGithub /></a>
             </nav>
         </header>
     )
