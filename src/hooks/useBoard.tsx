@@ -61,7 +61,8 @@ export const useBoard = ()=>{
     }
 
     useEffect(()=>{
-        getRandomWord()
+        if (!secretWord)
+           getRandomWord()
     },[])
 
     
@@ -76,8 +77,9 @@ export const useBoard = ()=>{
     }
 
     const checkWord = ()=>{
-        console.log(secretWord)
-        if (currentWord.length != 5)
+        console.log("secret:",secretWord)
+        console.log("---------------------")
+        if (currentWord.length != 5 || !secretWord)
             return
 
         setBlock(true)
@@ -100,15 +102,18 @@ export const useBoard = ()=>{
             const matchIndex = secretWordLetters.indexOf(letter)
 
             if (matchIndex === -1){
-                secretWordLetters[index] =''
+
                 results.letters.push({letter: letter, status:'absent'})
+
             }else if(matchIndex === index){
-                secretWordLetters[index] =''
+                secretWordLetters[matchIndex] =''
                 results.letters.push({letter: letter, status:'correct'})
                 correctLetters += 1
+
             }else{
-                secretWordLetters[index] =''
+                secretWordLetters[matchIndex] =''
                 results.letters.push({letter: letter, status:'present'})
+              
             }
         })
         setBoard((prevBoard:BoardType)=>{
@@ -165,6 +170,9 @@ export const useBoard = ()=>{
 
     return{
         resetBoard,
+        secretWord,
+        setSecretWord,
+        setCurrentWord,
         checkWord,
         isWordInDictionary,
         registerLetter,
